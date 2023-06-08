@@ -21,6 +21,3 @@ object Main extends App with MyTrait {
   printSomething
 }
 ```
-
-**Note:** It is not necessary to rebuild projects using this library as a dependency each time the library is republished.
-
