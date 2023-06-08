@@ -1,6 +1,6 @@
 # Metrics
 
-Example of an Akka HTTP app extending the KamonMetrics trait.
+Below is an example of an Akka HTTP app extending the KamonMetrics trait in this package.
 - Kamon metrics initialised on server startup, custom metric is incremented each time `localhost:8080/` is called.
 - Metrics are surfaced to `localhost:9095/metrics` (default).
 
