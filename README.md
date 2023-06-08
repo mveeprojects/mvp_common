@@ -1,4 +1,4 @@
-# mvpcommon
+# mvp_common
 
 Example of writing a library in Scala. To be extended in the future with common code.
 
