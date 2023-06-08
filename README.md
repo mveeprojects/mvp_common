@@ -10,7 +10,7 @@ sbt publishLocal
 ### Add library dependency to another project
 ```shell
 libraryDependencies ++= Seq(
-  "mveeprojects" %% "mvpcommon" % "0.1"
+  "mveeprojects" %% "mvp_common" % "0.1"
 )
 ```
 
