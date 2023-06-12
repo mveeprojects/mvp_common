@@ -21,3 +21,8 @@ object Main extends App with MyTrait {
   printSomething
 }
 ```
+
+## Resources:
+- https://stackoverflow.com/questions/35148590/how-to-make-a-scala-library
+- https://stackoverflow.com/questions/24842257/how-do-i-create-a-custom-scala-library-using-sbt
+- https://stackoverflow.com/questions/50145278/scala-create-and-use-local-library

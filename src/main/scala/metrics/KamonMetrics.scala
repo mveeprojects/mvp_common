@@ -1,17 +1,17 @@
 package metrics
 
 import kamon.Kamon
-import kamon.metric.Gauge
+import kamon.metric.Counter
 import metrics.KamonMetrics.myCustomMetric
 
-trait KamonMetrics {
-  def initialiseKamon(): Unit = Kamon.init()
-  def incrementMyCustomMetric: Gauge = {
+trait KamonMetrics extends MyMetrics {
+  def initialiseMetrics: Unit = Kamon.init()
+  def incrementMyCustomMetric: Unit = {
     println("Incrementing myCustomMetric")
     myCustomMetric.increment()
   }
 }
 
 object KamonMetrics {
-  val myCustomMetric: Gauge = Kamon.gauge("my-custom-metric").withoutTags()
+  val myCustomMetric: Counter = Kamon.counter("my-custom-metric").withoutTags()
 }
