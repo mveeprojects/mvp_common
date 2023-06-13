@@ -11,8 +11,7 @@ object Main extends App with HTTPPureConfig {
     .newServerAt(httpConfig.http.hostname, httpConfig.http.port)
     .bindFlow(route)
     .onComplete {
-      case Success(_) =>
-        println(s"App running (${httpConfig.http.hostname}:${httpConfig.http.port})")
+      case Success(_) => println(s"App running (${httpConfig.http.hostname}:${httpConfig.http.port})")
       case Failure(ex) => println(s"App failed to start:\n${ex.getMessage}")
     }
 }
