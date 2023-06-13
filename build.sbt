@@ -8,7 +8,8 @@ version := "0.1"
 scalaVersion := "2.13.11"
 
 libraryDependencies ++=
-  kamonMetricsDependencies
+  kamonMetricsDependencies ++
+    pureConfigDependencies
 
 lazy val root = Project("mvp_common", file("."))
   .settings(kamonSettings)
