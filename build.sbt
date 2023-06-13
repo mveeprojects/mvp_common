@@ -1,8 +1,8 @@
 import Dependencies._
 import Monitoring.kamonSettings
 
-name := "mvp_common"
 organization := "mveeprojects"
+name := "mvp_common"
 version := "0.1"
 
 scalaVersion := "2.13.11"
