@@ -29,8 +29,7 @@ object CassandraPureConfig {
       datacentre: String,
       keyspace: String,
       replicas: Int,
-      tablename: String,
-      preparedstatementcache: Int
+      tablename: String
   )
 
   case class Config(cassandra: CassandraConfig)
